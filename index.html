@@ -1,0 +1,38 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Регистрация</title>
+   <style>
+   p {
+    border: 1px solid grey;
+    padding: 2px;
+    width:270px;
+   }
+  </style>
+ </head>
+<body>
+   <h1>Пример формы регистрации сайта</h1>
+  <form action="/examples/php-scripts/user.php" method="post">
+	Логин:</br>
+	<input type="text" name="nickname" maxlength="50" size="20"></br>
+	Пароль:</br>
+	<input type="password" name="pass" maxlength="50" size="20" placeholder="password"></br>
+	URL-адрес сайта:</br>
+	<input type="url" value="https://" name="url"></br>
+	Название сайта:</br>
+	<input type="text" name="site" maxlength="50" size="20"></br>
+	Описание сайта:</br>
+	<textarea name="message" cols="70" rows="8"></textarea></br>
+	Тема сайта:</br>
+	<select>
+	<option disabled selected>Тема не выбрана</option>
+  	<option value="Пункт 1">Пункт 1</option>
+  	<option value="Пункт 2">Пункт 2</option>
+	</select></br>
+	Баннер 88x31:
+	<p><input type="file" name="ban"></p>
+	<input type="reset" value="Очистить">
+	<input type="submit" value="Отправить">
+</form>
+ </body>
+</html>
